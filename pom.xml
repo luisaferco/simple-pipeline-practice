@@ -131,6 +131,6 @@
           <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
         </configuration>
       </plugin>
-    </plugins>
+  </plugins>
   </build>
 </project>
