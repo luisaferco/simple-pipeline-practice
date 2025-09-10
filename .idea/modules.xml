@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/simple-pipeline-practice.iml" filepath="$PROJECT_DIR$/simple-pipeline-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-automation-pom.iml" filepath="$PROJECT_DIR$/web-automation-pom.iml" />
     </modules>
   </component>
 </project>

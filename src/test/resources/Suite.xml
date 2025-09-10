@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Training web Test Suite">
+   <!-- <parameter name="browser" value="CHROME"/> -->
+    <parameter name="url" value="https://www.globalsqa.com/angularjs-protractor-practice-site/"/>
+    <listeners>
+        <listener class-name="co.com.training.web.tests.MyCoolListener"/>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Filtering Options Test">
+        <groups>
+            <run>
+                <include name="filteringGroup"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="co.com.training.web.tests.FilteringOptionsTests"/>
+        </classes>
+    </test>
+    <test name="My Registration Test">
+         <parameter name="dataWrongUserName" value="badUser123"/>
+         <parameter name="dataWrongPassword" value="badPassword123"/>
+         <parameter name="userName" value="Conselevator"/>
+         <parameter name="password" value="123ABC"/>
+         <classes>
+             <class name="co.com.training.web.tests.RegistrationLoginTests"/>
+         </classes>
+     </test>
+ </suite> <!-- Suite -->
