@@ -49,7 +49,7 @@ public class RegistrationLoginTests extends BaseTest{
         NavigationPage navigationPage = getNavigationPage();
         LoginPage loginPage = navigationPage.navigateToRegistration();
         loginPage.loginWith(userName, password);
-        Assertions.assertThat(loginPage.getAlertMessage()).as("Should appear error authentication message")
+        Assertions.assertThat(loginPage.getAlertMessage()).as("error authentication message")
                         .isEqualTo("Username or password is incorrect");
 
     }
