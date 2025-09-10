@@ -28,7 +28,7 @@ jobs:
         run: mvn clean
 
       - name: Run tests
-        run: mvn test
+        run: mvn test -DbrowserName=CHROME
         continue-on-error: true
 
       - name: Get Allure history
